@@ -1,10 +1,11 @@
-image:
-  repository: djccarew/watson-assistant-botkit-example
-  tag: "1.0"
-  pullPolicy: Always
 
-assistantIamApiKey: oAf4Ct7SnlFM79U6EO5xF0AVfNtALj4FBVVc4Virct2d
-slackToken: xoxb-523003716679-523356238438-q95ldCv0P0zcvuhQGUu6hEJ2
-slackSigningSecret: c1365a9e4776f66ada58afb851dd1fd7
-workspaceId: 128f8632-6b3e-42c8-a95e-405121f131df
-assistantUrl: "https://gateway.watsonplatform.net/assistant/api"
+replicas: 1
+
+auth:
+  assistantIamApiKey: oAf4Ct7SnlFM79U6EO5xF0AVfNtALj4FBVVc4Virct2d
+  slackToken: xoxb-523003716679-523356238438-q95ldCv0P0zcvuhQGUu6hEJ2
+  slackSigningSecret: c1365a9e4776f66ada58afb851dd1fd7
+
+skill:
+  workspaceId: 128f8632-6b3e-42c8-a95e-405121f131df
+  assistantUrl: "https://gateway.watsonplatform.net/assistant/api"

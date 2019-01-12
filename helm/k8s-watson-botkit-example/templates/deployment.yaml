@@ -21,19 +21,19 @@ spec:
     spec:
       containers:
       - name: {{ .Release.Name }}-web
-        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        image: "djccarew/watson-assistant-botkit-example:1.0"
+        imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 5000
         env:
         - name: ASSISTANT_IAM_APIKEY
-          value: {{ .Values.assistantIamApiKey }}
+          value: {{ .Values.auth.assistantIamApiKey }}
         - name: SLACK_TOKEN
-          value:  {{ .Values.slackToken }}
+          value:  {{ .Values.auth.slackToken }}
         - name: SLACK_SIGNING_SECRET
-          value: {{ .Values.slackSigningSecret }}
+          value: {{ .Values.auth.slackSigningSecret }}
         - name: WORKSPACE_ID
-          value: {{ .Values.workspaceId }}
+          value: {{ .Values.skill.workspaceId }}
         - name: ASSISTANT_URL
-          value: "{{ .Values.assistantUrl }}"
+          value: "{{ .Values.skill.assistantUrl }}"
