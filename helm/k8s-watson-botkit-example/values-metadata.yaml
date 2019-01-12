@@ -4,55 +4,5 @@ replicas:
     label: "Number of replicas"
     description: "The number of desired replica pods that run simultaneously."
     type: "number"
-    default: 1
     immutable: false
     required: true
-
-auth:
-  __metadata:
-    label: "Authentication"
-  assistantIamApiKey:
-    __metadata:
-      name: "assistantIamApiKey"
-      label: "Watson Assistant IAM apikey"
-      description: "The IAM apikey used to authenticate to Watson Assistant"
-      type: "string"
-      immutable: false
-      required: true
-  slackToken:
-    __metadata:
-      name: "slackToken"
-      label: "Slack App OAUTH Token"
-      description: "The OAUTH token used communicate with Slack"
-      type: "string"
-      immutable: false
-      required: true
-  slackSigningSecret:
-    __metadata:
-      name: "slackSigningSecret"
-      label: "Slack Signing Secret"
-      description: "Used to verify that user chatbot input is from Slack"
-      type: "string"
-      immutable: false
-      required: true
-
-skill:
-  __metadata:
-    label: "Watson Skill Instance"
-  workspaceId:
-    __metadata:
-      name: "workspaceId"
-      label: "Watson Assistant Workspace ID"
-      description: "The Workspace ID of the Watson skill interted with Slack"
-      type: "string"
-      immutable: false
-      required: true
-  assistantUrl:
-    __metadata:
-      name: "assistantUrl"
-      label: "Watson Assistant API Endpoint"
-      description: "REST endpoint used to interact with the Watson Assistant skill"
-      type: "string"
-      default: "https://gateway.watsonplatform.net/assistant/api"
-      immutable: false
-      required: false
