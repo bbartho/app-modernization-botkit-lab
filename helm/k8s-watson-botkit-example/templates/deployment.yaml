@@ -9,7 +9,7 @@ metadata:
 
 
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{ .Values.replicas }}
   template:
     metadata:
       labels:

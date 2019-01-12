@@ -1,12 +1,9 @@
-# Simple bot
-
+# Kubernetes Watson Assistant <--> Botkit example
 This is a slightly modified version of the sample app (with the same source file  name) available with [the middleware to connect  Watson Assistant skills to different chat channels using Botkit](https://github.com/watson-developer-cloud/botkit-middleware).
 
-This version is designed to be run on Kubernetes and includes a Helm chart in the *helm* folder that injects the required parameters as ENV vars into the container that runs the app. The values are taken from  the Helm values instead of the file **.env** that was used in the original version.
+This version is designed to be run on Kubernetes and includes a Helm chart that injects the required parameters as ENV vars into the container that runs the app. The values are taken from  the Helm values instead of the file **.env** that was used in the original version.
 
-The procedure for running this as follows:
-
-1. Add your Slack token and Watson Assistant credentials to the corresponding values in [values.yaml](docs/chart/values.yaml) or set these values on the command line when you install the Helm Chart. The following values can be set
+The following  values can be set  when you install the Helm Chart.
 
   | Name          | Description | Required ? |
   | ------------- | ----------- | ---------- |
@@ -17,12 +14,6 @@ The procedure for running this as follows:
   | assistantUrl | The API endpoint for the Watson Assistant instance with the skill to be connected to Slack | No |
 
 
-2. Install the chart using Helm
-
-    ```
-    helm install --namespace [the k8s namespace] -name simple-bot-slack helm/k8s-watson-botkit-example
-    ```
-
-3. Launch Slack, send direct messages to your Slack bot and get responses from your Watson Assistant workspace.
+Once the Helm Chart is installed you can launch Slack and send direct messages to your Slack bot and get responses from your Watson Assistant workspace.
 
 ![promisechains](https://cloud.githubusercontent.com/assets/5727607/19366644/fe122c2a-9165-11e6-9728-b18a5d9e1198.gif)

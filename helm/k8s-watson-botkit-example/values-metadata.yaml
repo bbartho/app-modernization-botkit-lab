@@ -23,7 +23,7 @@ auth:
     __metadata:
       name: "slackToken"
       label: "Slack App OAUTH Token"
-      description: "The OAUTH token used communicate with Slack"
+      description: "The OAUTH token used to communicate with Slack"
       type: "string"
       immutable: false
       required: true
