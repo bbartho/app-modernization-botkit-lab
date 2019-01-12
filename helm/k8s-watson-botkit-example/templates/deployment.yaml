@@ -1,0 +1,39 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-{{ .Chart.Name }}
+  labels:
+    app: k8s-watson-botkit
+    chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+    release: {{ .Release.Name | quote }}
+
+
+spec:
+  replicas: {{ .Values.replicaCount }}
+  template:
+    metadata:
+      labels:
+         app: k8s-watson-botkit
+         chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}
+         release: {{ .Release.Name | quote }}
+
+
+    spec:
+      containers:
+      - name: {{ .Release.Name }}-web
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+        imagePullPolicy: {{ .Values.image.pullPolicy }}
+        ports:
+        - name: http
+          containerPort: 5000
+        env:
+        - name: ASSISTANT_IAM_APIKEY
+          value: {{ .Values.assistantIamApiKey }}
+        - name: SLACK_TOKEN
+          value:  {{ .Values.slackToken }}
+        - name: SLACK_SIGNING_SECRET
+          value: {{ .Values.slackSigningSecret }}
+        - name: WORKSPACE_ID
+          value: {{ .Values.workspaceId }}
+        - name: ASSISTANT_URL
+          value: "{{ .Values.assistantUrl }}"

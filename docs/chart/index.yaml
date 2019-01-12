@@ -1,0 +1,46 @@
+apiVersion: v1
+entries:
+  k8s-watson-botkit-example:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: 2019-01-12T03:45:28.794724-06:00
+    description: A Helm chart for a simpleapp  using IBM's Botkit middleware integration
+      with Slack
+    digest: 7bb19741be8f611b5f8a6c7cf0d6bfb55b1c91e48b5e5a27d8eeb4aede775aae
+    icon: https://www.ibm.com/watson/assets/duo/img/common/avatar_purple.png
+    keywords:
+    - Watson
+    - Botkit
+    - Other
+    - Sample
+    maintainers:
+    - email: carew@us.ibm.com
+      name: David Carew
+    name: k8s-watson-botkit-example
+    sources:
+    - https://github.com/djccarew/app-modernization-botkit-lab
+    urls:
+    - https://djccarew.github.io/app-modernization-botkit-lab/chart/k8s-watson-botkit-example-1.0.tgz
+    version: "1.0"
+  - apiVersion: v1
+    appVersion: "1"
+    created: 2019-01-12T03:45:28.795208-06:00
+    description: A Helm chart for a simpleapp  using IBM's Botkit middleware integration
+      with Slack
+    digest: 899387dfe918b3da509075cc3d282652d9be5bb8e003a59ef5eab6c0c834e56a
+    icon: https://www.ibm.com/watson/assets/duo/img/common/avatar_purple.png
+    keywords:
+    - Watson
+    - Botkit
+    - Other
+    - Sample
+    maintainers:
+    - email: carew@us.ibm.com
+      name: David Carew
+    name: k8s-watson-botkit-example
+    sources:
+    - https://github.com/djccarew/app-modernization-botkit-lab
+    urls:
+    - https://djccarew.github.io/app-modernization-botkit-lab/chart/k8s-watson-botkit-example-1.tgz
+    version: "1"
+generated: 2019-01-12T03:45:28.791917-06:00
