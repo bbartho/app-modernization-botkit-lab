@@ -3,9 +3,9 @@ entries:
   k8s-watson-botkit-example:
   - apiVersion: v1
     appVersion: "1.0"
-    created: 2019-01-12T08:51:47.161586-06:00
+    created: 2019-01-12T09:05:27.936633-06:00
     description: A Helm chart for a sample app  using IBM's Botkit middleware
-    digest: 69f9f8b2f7c3e87b0f4d645d721eec7bfab4119d2b568c93b581abd55b47a93f
+    digest: c6adae315e20d0b00cf3d03de962f72495426054413d9513a8f7e615c5cab9d5
     icon: https://www.ibm.com/watson/assets/duo/img/common/avatar_purple.png
     keywords:
     - Watson
@@ -19,6 +19,6 @@ entries:
     sources:
     - https://github.com/djccarew/app-modernization-botkit-lab
     urls:
-    - https://djccarew.github.io/app-modernization-botkit-lab/chart/k8s-watson-botkit-example-1.0.tgz
-    version: "1.0"
-generated: 2019-01-12T08:51:47.160854-06:00
+    - https://djccarew.github.io/app-modernization-botkit-lab/chart/k8s-watson-botkit-example-1.0.1.tgz
+    version: 1.0.1
+generated: 2019-01-12T09:05:27.934039-06:00
