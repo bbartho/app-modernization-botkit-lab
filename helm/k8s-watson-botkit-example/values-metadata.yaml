@@ -18,17 +18,9 @@ debugMode:
     immutable: false
     required: true
 
-auth:
+slackauth:
   __metadata:
-    label: "Authentication"
-  assistantIamApiKey:
-    __metadata:
-      name: "assistantIamApiKey"
-      label: "Watson Assistant IAM apikey"
-      description: "The IAM apikey used to authenticate to Watson Assistant"
-      type: "string"
-      immutable: false
-      required: true
+    label: "Slack authentication"
   slackToken:
     __metadata:
       name: "slackToken"
@@ -46,9 +38,17 @@ auth:
       immutable: false
       required: true
 
-skill:
+watsonskill:
   __metadata:
     label: "Watson skill access"
+  assistantIamApiKey:
+    __metadata:
+      name: "assistantIamApiKey"
+      label: "Watson Assistant IAM apikey"
+      description: "The IAM apikey used to authenticate to Watson Assistant"
+      type: "string"
+      immutable: false
+      required: true
   workspaceId:
     __metadata:
       name: "workspaceId"

@@ -2,11 +2,11 @@
 replicas: 1
 debugMode: "true"
 
-auth:
-  assistantIamApiKey:
+slackauth:
   slackToken:
   slackSigningSecret:
 
-skill:
-  workspaceId: 
+watsonskill:
+  assistantIamApiKey:
+  workspaceId:
   assistantUrl: "https://gateway.watsonplatform.net/assistant/api"

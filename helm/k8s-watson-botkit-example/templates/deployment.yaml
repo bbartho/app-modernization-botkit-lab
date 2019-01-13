@@ -30,12 +30,12 @@ spec:
         - name: DEBUG_MODE
           value: "{{ .Values.debugMode }}"
         - name: ASSISTANT_IAM_APIKEY
-          value: {{ .Values.auth.assistantIamApiKey }}
+          value: {{ .Values.watsonskill.assistantIamApiKey }}
         - name: SLACK_TOKEN
-          value:  {{ .Values.auth.slackToken }}
+          value:  {{ .Values.slackauth.slackToken }}
         - name: SLACK_SIGNING_SECRET
-          value: {{ .Values.auth.slackSigningSecret }}
+          value: {{ .Values.slackauth.slackSigningSecret }}
         - name: WORKSPACE_ID
-          value: {{ .Values.skill.workspaceId }}
+          value: {{ .Values.watsonskill.workspaceId }}
         - name: ASSISTANT_URL
-          value: "{{ .Values.skill.assistantUrl }}"
+          value: "{{ .Values.watsonskill.assistantUrl }}"
