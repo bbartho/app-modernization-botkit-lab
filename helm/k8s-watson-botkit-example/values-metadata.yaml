@@ -8,6 +8,16 @@ replicas:
     immutable: false
     required: true
 
+debugMode:
+ __metadata:
+    name: "debugMode"
+    label: "Debug Mode"
+    description: "Enables highest logging level"
+    type: "boolean"
+    default: false
+    immutable: false
+    required: true
+
 auth:
   __metadata:
     label: "Authentication"

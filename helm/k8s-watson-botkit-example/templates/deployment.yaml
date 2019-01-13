@@ -27,6 +27,8 @@ spec:
         - name: http
           containerPort: 5000
         env:
+        - name: DEBUG_MODE
+          value: "{{ .Values.debugMode }}"
         - name: ASSISTANT_IAM_APIKEY
           value: {{ .Values.auth.assistantIamApiKey }}
         - name: SLACK_TOKEN

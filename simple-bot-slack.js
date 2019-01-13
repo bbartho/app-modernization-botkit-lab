@@ -20,12 +20,20 @@ var Botkit = require('botkit');
 var express = require('express');
 var middleware = require('botkit-middleware-watson')({
   iam_apikey: process.env.ASSISTANT_IAM_APIKEY,
-  password: process.env.ASSISTANT_PASSWORD,
   workspace_id: process.env.WORKSPACE_ID,
   url: process.env.ASSISTANT_URL || 'https://gateway.watsonplatform.net/assistant/api',
   version: '2018-09-20'
 });
 
+console.log("Running with DEBUG_MODE set to " + process.env.DEBUG_MODE)
+
+if (process.env.DEBUG_MODE == "true") {
+  console.log("SLACK_TOKEN = " + process.env.SLACK_TOKEN);
+  console.log("SLACK_SIGNING_SECRET =  " + process.env.SLACK_SIGNING_SECRET);
+  console.log("ASSISTANT_IAM_APIKEY = " + process.env.ASSISTANT_IAM_APIKEY);
+  console.log("ASSISTANT_URL = " + process.env.ASSISTANT_URL);
+  console.log("WORKSPACE_ID = " + process.env.WORKSPACE_ID);
+}
 // Configure your bot.
 var slackController = Botkit.slackbot({ clientSigningSecret: process.env.SLACK_SIGNING_SECRET });
 var slackBot = slackController.spawn({
