@@ -32,8 +32,8 @@ auth:
   slackToken:
     __metadata:
       name: "slackToken"
-      label: "Slack App OAUTH Token"
-      description: "The OAUTH token used to communicate with Slack"
+      label: "Slack Bot User OAuth Token"
+      description: "The OAuth token used to communicate with Slack"
       type: "string"
       immutable: false
       required: true
@@ -53,7 +53,7 @@ skill:
     __metadata:
       name: "workspaceId"
       label: "Watson Assistant Workspace ID"
-      description: "The Workspace ID of the Watson skill interted with Slack"
+      description: "The Workspace ID of the Watson skill integrated with Slack"
       type: "string"
       immutable: false
       required: true
