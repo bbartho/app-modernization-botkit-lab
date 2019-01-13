@@ -16,7 +16,7 @@ You'll need a Slack environment with a workspace for which  you have owner privi
 
 **Note:** Proceed to **Step 2: Create a Slack app** if you already have an existing Slack workspace with ownership privileges)
 
-1. Create a free Slack account with an email address that has not been used with Slack before at https://slack.com **Note: you'll have to validate your email address and create a workspace and a channel as part of the workflow. You can name this whatever you'd like.**
+1. Create a free Slack account with an email address that has not been used with Slack before at https://slack.com **Note:** you'll have to validate your email address, create a workspace and create a channel as part of the workflow. You can name these whatever you like.
 
 ### Step 2: Create a Slack app
 
